@@ -27,7 +27,7 @@ services:
       test: [ "CMD", "node", "/usr/src/api/healthcheck.js" ]
       interval: "1m"
       timeout: "10s"
-      retries: "5"
+      retries: 5
       start_period: "30s"
     image: "xbrowsersync/api:1.1.13"
     restart: "unless-stopped"
